@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("bg.gpg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.login {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+h2 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid white;
+}
+.box label {
+  position: absolute;
+  top: -15%;
+  left: 5px;
+  transform: translateY(-50);
+  font-size: 1em;
+  color: white;
+  pointer-events: none;
+}
+.box input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: white;
+  padding: 0 40px 0 5px;
+}
+.box .icon {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 1.2em;
+  line-height: 57px;
+}
+input::placeholder {
+  color: grey;
+  font-size: small;
+}
+.forget {
+  margin: -20px 0 20px;
+  font-size: 0.9em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.forget label input {
+  margin-right: 5px;
+}
+.forget a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  color: black;
+  font-weight: 500;
+}
+.register {
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+.register p a {
+  color: white;
+  font-weight: 700;
+}
+@media (max-width: 300px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+  }
+}
